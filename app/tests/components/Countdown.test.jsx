@@ -25,7 +25,7 @@ describe("Countdown", () => {
 			}, 1001);
 		});
 
-		it("should not be negative", (done) => {
+		it("should never be negative", (done) => {
 			var countdown = TestUtils.renderIntoDocument(<Countdown/>);
 			countdown.handleSetCountdown(1);
 
